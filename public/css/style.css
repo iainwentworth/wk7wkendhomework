@@ -1,0 +1,41 @@
+/* h1 {
+  font-family: Impact;
+} */
+
+body {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+* {
+  font-family: Andale Mono;
+  /* list-style-type: none; */
+  text-align: center;
+}
+
+#star-wars-planet-list{
+
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+ul {
+  padding:0;
+  list-style-position: inside; /* to align the bullet point central with text */
+}
+
+li {
+  list-style: none;
+}
+
+#star-wars-planet-list > div {
+  border-style: solid;
+  border-color: rgba(0, 0, 0, 0.34);
+  border-radius: 10px;
+  margin: 10px;
+  /* text-align: center; */
+  justify-content: center;
+  padding: 5px;
+  background-color: rgba(13, 3, 9, 0.31);
+  flex-grow: 1;
+}
