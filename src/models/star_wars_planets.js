@@ -9,7 +9,7 @@ StarWarsPlanets.prototype.bindEvents = function(){
   PubSub.subscribe('StarWarsPlanetSelectView:planet-index-selected', (event) => {
     const index = event.detail;
     const planet = this.planets[index];
-    PubSub.publish('StarWarsPlanets:planets-loaded', planet);
+    PubSub.publish('StarWarsPlanets:selected-planet', planet);
   })
 }
 
